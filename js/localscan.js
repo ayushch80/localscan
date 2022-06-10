@@ -8,7 +8,7 @@ function getData() {
   const addressData = bData.elements.namedItem("address").value;
 
   const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
-  const block = provider.getBlock(parseInt(blockData));
+  const block = provider.getBlock(0x1);
 
   const blockHash = block.hash
   

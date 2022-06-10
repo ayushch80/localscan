@@ -15,7 +15,7 @@
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text" id="block_">Block No.</span>
-        <input type="number" class="form-control" placeholder="Enter Block Number here" aria-label="block_number" aria-describedby="block" id="block">
+        <input type="text" class="form-control" placeholder="Enter Block Number here" aria-label="block_number" aria-describedby="block" id="block" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text" id="txn_">Txn Hash</span>

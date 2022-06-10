@@ -6,9 +6,11 @@ function getData() {
   const blockData = bData.elements.namedItem("block").value;
   const txnHash = bData.elements.namedItem("txn").value;
   const addressData = bData.elements.namedItem("address").value;
-
+  
+  const blockData_p = number.(blockData)
+  
   const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
-  const block = provider.getBlock(0x1);
+  const block = provider.getBlock(blockData_p);
 
   const blockHash = block.hash
   

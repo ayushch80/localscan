@@ -5,5 +5,5 @@ const txnHash = bData.elements.namedItem("txn").value;
 const addressData = bData.elements.namedItem("address").value;
 document.getElementById("btn_click").addEventListener("click", getData);
 function getData() {
-  $('.rpcU').append("<b>ENTERED JSON RPC URL<b>" + rpcUrl);
+  $('.rpcU').append("<b>ENTERED JSON RPC URL --><b>" + rpcUrl);
 }

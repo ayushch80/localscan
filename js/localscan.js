@@ -7,7 +7,7 @@ const txnHash = bData.elements.namedItem("txn").value;
 const addressData = bData.elements.namedItem("address").value;
 
 const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
-const block = await provider.getBlock(blockData)
+const block = await provider.getBlock(0)
 
 const blockHash = block.hash
 document.getElementById("btn_click").addEventListener("click", getData);

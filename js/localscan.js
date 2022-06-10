@@ -1,4 +1,4 @@
-import { ethers } from "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js";
+import { ethers } from "https://cdn.ethers.io/lib/ethers-5.6.8.umd.min.js";
 
 document.getElementById("btn_click").addEventListener("click", getData);
 function getData() {

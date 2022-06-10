@@ -7,22 +7,25 @@
     <title>LocalScan</title>
   </head>
   <body>
-    <form>
+    <form id="uData" method="POST">
       <div class="input-group mb-3">
-        <span class="input-group-text" id="rpc">RPC URL</span>
-        <input type="text" class="form-control" placeholder="Enter Json Rpc Url here" aria-label="block_number" aria-describedby="rpc">
+        <span class="input-group-text" id="rpc_">RPC URL</span>
+        <input type="text" class="form-control" placeholder="Enter Json Rpc Url here" aria-label="block_number" aria-describedby="rpc" id="rpc">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="block">Block No.</span>
+        <span class="input-group-text" id="block_">Block No.</span>
         <input type="text" class="form-control" placeholder="Enter Block Number here" aria-label="block_number" aria-describedby="block">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="txn">Txn Hash</span>
+        <span class="input-group-text" id="txn_">Txn Hash</span>
         <input type="text" class="form-control" placeholder="Enter Transaction Hash here" aria-label="block_number" aria-describedby="txn">
       </div>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="address">Address</span>
+        <span class="input-group-text" id="address_">Address</span>
         <input type="text" class="form-control" placeholder="Enter Address here" aria-label="block_number" aria-describedby="address">
+      </div>
+      <div class="col-12">
+        <button name="data" type="button" class="btn btn-primary" id="btn_click" id-"submit" onClick="window.location.reload();">Submit form</button>
       </div>
     </form>
     <script src="js/localscan.js" type="module"></script>

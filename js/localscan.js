@@ -4,4 +4,5 @@ const rpcUrl = bData.elements.namedItem("rpc").value;
 const blockData = bData.elements.namedItem("block").value;
 const txnHash = bData.elements.namedItem("txn").value;
 const addressData = bData.elements.namedItem("address").value;
+document.getElementById("rpcU").innerText = "JSON RPC URL -->" + rpcUrl;
 console.log(rpcUrl)

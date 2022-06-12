@@ -11,9 +11,11 @@ function getData() {
   
   const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
   const block = provider.getBlock(blockData_p);
+  const adres = provider.getBalance(addressData);
 
   const blockHash = block.hash
   
   $('.rpcU').append("<p><b>ENTERED JSON RPC URL --></b>" + rpcUrl + "</p>");
   $('.blockD').append("<h4>BLOCK DATA</h4><p><b>Block Number</b>" + blockData + "<br><b>BLOCK HASH</b>" + blockHash + "</p>");
+  $('.addD').append("<h4>Address Data</h4><br><b>Balance -- </b>" +  );
 }

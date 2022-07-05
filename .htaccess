@@ -1,1 +1,2 @@
 Header set Access-Control-Allow-Origin https://cdn.ethers.io/
+Permissions-Policy: interest-cohort=()

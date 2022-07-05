@@ -1,1 +1,1 @@
-Header set Access-Control-Allow-Origin 'https://cdn.ethers.io/lib/ethers-5.2.esm.min.js'
+Header set Access-Control-Allow-Origin https://cdn.ethers.io/lib/ethers-5.2.esm.min.js

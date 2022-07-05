@@ -1,4 +1,3 @@
-import { ethers } from "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js";
 const provider_eth = new ethers.providers.JsonRpcProvider("https://rpc.ankr.com/eth");
 const provider_bsc = new ethers.providers.JsonRpcProvider("https://rpc.ankr.com/bsc");
 const provider_pol = new ethers.providers.JsonRpcProvider("https://rpc.ankr.com/polygon");
